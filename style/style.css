@@ -1,3 +1,10 @@
+/* root */
+:root {
+  --color-for-description: gray;
+  --font-size-for-title: 50px;
+  --font-size-for-description: 17px;
+}
+
 /* reset */
 * {
   margin: 0;
@@ -13,5 +20,70 @@ img {
 ul {
   list-style-type: none;
 }
+/* Body */
+
+body {
+  font-family: sans-serif;
+}
 
 /*  Container */
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 0 0.5rem;
+}
+
+/* Title */
+
+.title {
+  font-size: var(--font-size-for-title);
+  padding-top: 30px;
+}
+.description {
+  font-size: var(--font-size-for-description);
+  color: var(--color-for-description);
+}
+
+/* MAIN */
+.cardcontainer {
+  display: flex;
+  gap: 2rem;
+  margin-top: 110px;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+.card {
+  height: 800px;
+  flex-shrink: 0;
+  flex-grow: 1;
+  background-color: red;
+  flex-basis: calc(100% / 3 - 2rem * 3 / 3);
+  min-width: 300px;
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  border-radius: 20px;
+}
+
+.centercard {
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  line-height: 50px;
+}
+
+.sale {
+  border-radius: 10px;
+  padding: 5px;
+  background-color: rgba(225, 225, 225);
+}
+
+.chooseplan {
+  background-color: rgba(101, 0, 255);
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+  color: white;
+}
+.info {
+}
