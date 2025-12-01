@@ -20,6 +20,67 @@ img {
 ul {
   list-style-type: none;
 }
+/* HEader */
+.mainheader {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.right {
+  justify-content: flex-end;
+  text-align: right;
+  padding-top: 30px;
+  padding-bottom: 5px;
+  flex-grow: 1;
+  gap: 30px;
+  display: flex;
+  color: gray;
+}
+/* Button on off */
+.border {
+  border-radius: 20px;
+  display: inline-block;
+  width: 43px;
+  height: 25px;
+}
+.on {
+  padding: 3px;
+  border: 2px black solid;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.off {
+  border: 2px gray solid;
+  display: flex;
+  padding: 3px;
+  align-items: center;
+  justify-content: flex-start;
+}
+.containeronoff {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  line-height: 25px;
+}
+
+.circleon {
+  height: 19px;
+  border-radius: 20px;
+  width: 19px;
+  background-color: white;
+}
+
+.circleoff {
+  position: relative;
+  right: 6px;
+  height: 24px;
+  border-radius: 20px;
+  width: 24px;
+  border: solid gray 2px;
+  background-color: white;
+}
 /* Body */
 
 body {
