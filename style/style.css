@@ -28,7 +28,7 @@ body {
 
 /*  Container */
 .container {
-  max-width: 1080px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 0.5rem;
 }
@@ -38,6 +38,7 @@ body {
 .title {
   font-size: var(--font-size-for-title);
   padding-top: 30px;
+  padding-bottom: 5px;
 }
 .description {
   font-size: var(--font-size-for-description);
@@ -48,23 +49,24 @@ body {
 .cardcontainer {
   display: flex;
   gap: 2rem;
-  margin-top: 110px;
+  margin-top: 70px;
   margin-bottom: 30px;
   flex-wrap: wrap;
 }
+/* FULL CARD */
 .card {
-  height: 800px;
+  height: 700px;
   flex-shrink: 0;
   flex-grow: 1;
-  background-color: red;
   flex-basis: calc(100% / 3 - 2rem * 3 / 3);
   min-width: 300px;
   padding-top: 30px;
   padding-left: 30px;
   padding-right: 30px;
   border-radius: 20px;
+  box-shadow: 2px 2px 13px 0px;
 }
-
+/* Fist part of the card */
 .centercard {
   text-align: center;
   padding-top: 20px;
@@ -77,13 +79,39 @@ body {
   padding: 5px;
   background-color: rgba(225, 225, 225);
 }
-
+/* Purple button */
 .chooseplan {
   background-color: rgba(101, 0, 255);
   border-radius: 20px;
   padding: 10px;
   margin-top: 10px;
   color: white;
+  font-weight: bolder;
+}
+/* LASt part */
+.infocontainer {
+  line-height: 55px;
+  font-size: 19px;
+  display: flex;
+  flex-direction: column;
 }
 .info {
+  display: flex;
+  gap: 14px;
+  align-items: center;
+}
+/* SECOND CARD */
+.selected {
+  color: white;
+}
+.purple {
+  background-color: rgba(101, 0, 255);
+}
+
+.blacksale {
+  color: black;
+}
+.reverse {
+  background-color: white;
+  color: rgba(101, 0, 255);
 }
